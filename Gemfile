@@ -14,7 +14,10 @@ gem 'bootstrap', '~> 4.4.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
 gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
