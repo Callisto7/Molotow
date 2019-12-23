@@ -14,6 +14,8 @@ gem 'bootstrap', '~> 4.4.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+gem 'trix'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'sass-rails', '~> 5.0'
@@ -64,6 +66,7 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

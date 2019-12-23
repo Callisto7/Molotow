@@ -14,6 +14,20 @@
   .post-body {
     padding-top: 1em;
   }
+
+  .img-show {
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  .thumb {
+    float: left;
+    margin-right:1em;
+  }
+
+  .post-head > small a {
+    text-decoration: none;
+  }
 }
 
 .form-group {
@@ -30,6 +44,11 @@
     }
   }
 }
+
+.editor {
+  min-height: 300px;
+}
+
 
 .wrapper {
   padding-top: 1em;
