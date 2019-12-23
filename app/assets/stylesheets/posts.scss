@@ -1,3 +1,36 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.scss.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.post {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid lightblue;
+
+  h1, h3 {
+    margin-bottom: 0;
+  }
+
+  .post-summary {
+    padding: .5em 0;
+  }
+
+  .post-body {
+    padding-top: 1em;
+  }
+}
+
+.form-group {
+  .btn-outline-success {
+    float: right;
+  }
+
+  .field_with_errors {
+    label {
+      color: #d01612;
+    }
+    input, textarea {
+      border-color: #d01612;
+    }
+  }
+}
+
+.wrapper {
+  padding-top: 1em;
+}

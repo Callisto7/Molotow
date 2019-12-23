@@ -4,41 +4,47 @@
     <title>Molotow</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+   <div class="container-fluid col-9">
      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+       <!--<a class="navbar-brand" href="#">Navbar w/ text</a>-->
        <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarText"
-               aria-controls="navbarText"
-               aria-expanded="false"
-               aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+                                                    data-target="#navbarText"
+                                                    aria-controls="navbarText"
+                                                    aria-expanded="false"
+                                                    aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span>
        </button>
-       <div class="container-fluid">
-
-         <!--<a class="navbar-brand" href="#">Navbar w/ text</a>-->
-
-           <div class="collapse navbar-collapse" id="navbarText">
-
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href=" <%= root_path %>">Все статьи</a><span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Контакты</a>
-               </li>
-             </ul>
-                <%= link_to 'Новая статья', new_post_path, class: 'btn btn-outline-light my-2 my-sm-0' %>
-           </div>
-       </div>
+         <div class="collapse navbar-collapse" id="navbarText">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="nav-link" href=" <%= root_path %>">Все статьи</a><span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Контакты</a>
+             </li>
+           </ul>
+              <%= link_to 'Новая статья', new_post_path, class: 'btn btn-outline-light my-2 my-sm-0' %>
+         </div>
      </nav>
-
-   <div class="container-fluid wrapper">
-    <%= yield %>
+   </div>
+   <div class="container-fluid wrapper col-9">
+     <div class="row">
+       <div class="col-md-12">
+       <% flash.each do |name, message| %>
+         <div class="alert alert-<% name %>success">
+           <%= message %>
+         </div>
+       <% end %>
+       </div>
+     </div>
+     <%= yield %>
    </div>
   </body>
 </html>
