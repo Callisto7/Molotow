@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
-    @posts = Post.all
+    @posts = Post.paginate(page: params[:page], per_page: 5)
   end
 
   def show
@@ -36,7 +36,6 @@ class PostsController < ApplicationController
   end
 
   def destroy
-
     @post.destroy
     redirect_to posts_path, success: 'Статья успешно удалена'
   end
@@ -48,6 +47,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :summary, :body, :image, :all_tags)
+    params.require(:post).permit(:title, :body, :image, :summary)
   end
 end
