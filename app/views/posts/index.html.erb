@@ -1,4 +1,7 @@
-<h1><%= t('.title') %></h1>
+<h1>
+  <%= t('.title') %>
+  <%= link_to 'Новая статья', new_post_path, class: 'btn btn-outline-primary my-sm-0' %>
+</h1>
 
 <%= render @posts %>
 

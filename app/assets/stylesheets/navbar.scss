@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+.navbar-brand {
+  font-family: 'Audiowide', cursive;
+  color: #2E2F30 !important;
+}
+
+.navbar-toggler {
+  background-color: #b1b1b1 !important;
+}
+
+.bg-light {
+  border-bottom: 1px solid #c1c6cc;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #39739d;
+  border-color: #7aa7c7;
+  background-color: #e1ecf4;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.7);
+  line-height: 1.15384615;
+
+  &:hover {
+    color: #2c5777;
+    background-color: #b3d3ea;
+    text-decoration: none;
+  }
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.navbar-collapse {
+  margin-right: -30px;
+}
+
+.btn-light {
+  background-color: #0095ff;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  line-height: 1.4;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+
+  &:hover {
+    color: #fff;
+    background-color: #0077cc !important;
+    border-color: inherit;
+  }
+
+  &:active {
+    background-color: #0064bd !important;
+    border-color: inherit !important;
+    color: #FFFFFF !important;
+  }
+}
