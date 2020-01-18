@@ -19,6 +19,8 @@ gem 'mini_magick'
 gem 'sass-rails', '~> 5.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'devise'
+gem 'haml-rails'
+gem 'font-awesome-sass', '~> 5.0.9'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

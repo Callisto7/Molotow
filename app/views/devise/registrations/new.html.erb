@@ -1,5 +1,7 @@
-<div class="sign-up">
-  <h2 class="text-center">Регистрация</h2>
+<div class="row justify-content-center">
+  <div class="col-sm-12 col-lg-6 col-xl-5">
+    <div class='shadow-sm auth-form'>
+  <h2 class="text-center">Зарегистрироваться</h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -21,11 +23,11 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: 'off', class: 'form-control' %>
   </div>
-
-  <div class="actions">
-    <%= f.submit 'Sign up', class: 'btn btn-outline-secondary' %>
-  </div>
+      <%= f.submit 'Зарегистрироваться', class: 'btn auth-btn-primary' %>
 <% end %>
-
-<%= render "devise/shared/links" %>
+    <div class="form-actions">
+      <%= render "devise/shared/links" %>
+    </div>
+</div>
+</div>
 </div>
