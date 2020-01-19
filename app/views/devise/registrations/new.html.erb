@@ -7,6 +7,18 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="form-group">
+    <%= f.label :first_name, 'Имя' %><br />
+    <%= f.text_field :first_name, autofocus: true,
+                      class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :last_name, 'Фамилия' %><br />
+    <%= f.text_field :last_name, autofocus: true,
+                     class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true,
                       autocomplete: 'email',
