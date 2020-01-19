@@ -5,6 +5,16 @@
   color: #2E2F30 !important;
 }
 
+.bg-light {
+  border-bottom: 2px solid #aba068;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  transition: height 600ms 0s ease;
+}
+
 .navbar-toggler {
   background-color: #b1b1b1 !important;
 }

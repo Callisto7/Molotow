@@ -23,7 +23,12 @@
     color: #ffffff;
     background-color: #0095ff;
     float: right;
+
+    &:hover {
+      background-color: #0077cc;
+    }
   }
+
   .mt-3 {
     margin-top: 1rem !important;
     display: flex;
