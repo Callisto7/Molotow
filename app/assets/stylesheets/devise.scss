@@ -48,4 +48,13 @@
   .form-actions {
     display: flex;
   }
+
+  .text-muted {
+    color: #6c757d !important;
+  }
+
+  .form-text {
+    display: block;
+    margin-top: 0.25rem;
+  }
 }

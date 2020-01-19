@@ -3,7 +3,9 @@
     <div class='shadow-sm auth-form'>
   <h2 class='text-center'>Забыли пароль?</h2>
 <p>
-  Введите ниже адрес электронной почты, который вы <br> указали при регистрации учетной записи <b>RM</b>. <br> Мы отправим вам письмо с инструкцией по сбросу пароля.
+  Введите ниже адрес электронной почты, который вы <br>
+  указали при регистрации учетной записи <b>RM</b>.
+  <br> Мы отправим вам письмо с инструкцией по сбросу пароля.
 </p>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
@@ -11,12 +13,16 @@
 
   <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email, class: 'form-control', autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email,
+                      class: 'form-control',
+                      autofocus: true,
+                      autocomplete: "email" %>
   </div>
 
-      <div class="form-actions mt-3">
-        <%= f.submit 'Отправить инструкцию по сбросу пароля', class: 'btn auth-btn-primary' %>
-      </div>
+  <div class="form-actions mt-3">
+    <%= f.submit 'Отправить инструкцию по сбросу пароля',
+                 class: 'btn auth-btn-primary' %>
+  </div>
 
 <% end %>
 
